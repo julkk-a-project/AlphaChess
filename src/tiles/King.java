@@ -26,20 +26,13 @@ public class King extends AbstractTile {
 		
 
 		relativeX = -1;
-		relativeY = 1;
+		relativeY = -1;
 		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
 			moves[0][pos] = relativeX(relativeX);
 			moves[1][pos] = relativeY(relativeY);
 			pos++;
 		}
-		relativeX = 1;
-		relativeY = 1;
-		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
-			moves[0][pos] = relativeX(relativeX);
-			moves[1][pos] = relativeY(relativeY);
-			pos++;
-		}
-		relativeX = -1;
+		relativeX = 0;
 		relativeY = -1;
 		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
 			moves[0][pos] = relativeX(relativeX);
@@ -54,20 +47,27 @@ public class King extends AbstractTile {
 			pos++;
 		}
 		relativeX = -1;
-		relativeY = 1;
+		relativeY = 0;
+		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
+			moves[0][pos] = relativeX(relativeX);
+			moves[1][pos] = relativeY(relativeY);
+			pos++;
+		}
+		relativeX = 1;
+		relativeY = 0;
 		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
 			moves[0][pos] = relativeX(relativeX);
 			moves[1][pos] = relativeY(relativeY);
 			pos++;
 		}
 		relativeX = -1;
-		relativeY = -1;
+		relativeY = 1;
 		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
 			moves[0][pos] = relativeX(relativeX);
 			moves[1][pos] = relativeY(relativeY);
 			pos++;
 		}
-		relativeX = 1;
+		relativeX = 0;
 		relativeY = 1;
 		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
 			moves[0][pos] = relativeX(relativeX);
@@ -75,7 +75,7 @@ public class King extends AbstractTile {
 			pos++;
 		}
 		relativeX = 1;
-		relativeY = -1;
+		relativeY = 1;
 		if (doableCord(relativeX(relativeX),relativeY(relativeY))) {
 			moves[0][pos] = relativeX(relativeX);
 			moves[1][pos] = relativeY(relativeY);
