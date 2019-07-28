@@ -58,6 +58,7 @@ public abstract class AbstractTile {
 		cords = new int[2];
 		cords[0] = x;
 		cords[1] = y;
+		this.side = side;
 		this.board = board;
 	}
 	public int relativeX(int relativeX) {
